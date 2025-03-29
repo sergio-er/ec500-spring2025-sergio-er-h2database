@@ -165,6 +165,10 @@ public class TableFilter implements ColumnResolver {
         this.indexHints = indexHints;
     }
 
+    public Expression getFullCondition(){
+        return fullCondition;
+    }
+
     /**
      * Get the order number (index) of this table filter in the "from" clause of
      * the query.
